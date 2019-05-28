@@ -52,21 +52,19 @@
             background-color: black;
             clear:both;
            }
-</style>
-
+      </style>
 </head>
 <body>
-
      <div id="header">
             <div id="pr">
-                </div>
-        </div>
-    <div id="main">
+            </div>
+      </div>
+     <div id="main">
             <div id="top">
-           <p>MyPage</p>
+                 <p>MyPage</p>
         </div>
               <div>
-            <s:if test="session.message == ''">
+            <s:if test="myPageList== null">
             <h3>ご購入情報は以下になります。</h3>
 <table>
        <tr>

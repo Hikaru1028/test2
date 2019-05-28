@@ -32,7 +32,6 @@ margin:0 auto;
 #top {
 width:780px;
 margin:30px auto;
-
 border:1px solid #333;
 }
 #header {
@@ -98,10 +97,7 @@ clear:both;
 
 </td>
 <td>
-<s:property value="session.buyItem_price" />
-
-<span>円</span>
-
+<s:property value="session.buyItem_price" /><span>円</span>
 </td>
 
 </tr>
@@ -109,67 +105,42 @@ clear:both;
 
 <td>
 
-<span>在庫</span>
+<span>購入個数</span>
 
 </td>
 <td>
 
-<select name="stock">
-
-
-
+<select name="count">
 <option value="1" selected="selected">1</option>
-
 <option value="2">2</option>
 <option value="3">3</option>
 <option value="4">4</option>
 <option value="5">5</option>
-
 </select>
-
 </td>
-
 </tr>
 <tr>
-
 <td>
-
 <span>支払い方法</span>
-
 </td>
 <td>
-
-<input type="radio" name="pay" value="1"
-
-checked="checked">現金払い
-
-<input type="radio" name="pay" value="2">クレジ
-
-ットカード
-
+<input type="radio" name="pay" value="1"checked="checked">現金払い
+<input type="radio" name="pay" value="2">クレジットカード
 </td>
-
 </tr>
+
+
+
 <tr>
-
-
-
-
-
 <td>
-
 <s:submit value="購入" />
-
 </td>
-
 </tr>
 </table>
-
 </s:form>
 <div>
-
-<span>前画面に戻る場合は</span>
-<a href='<s:url action="HomeAction" />'>こちら</a>
+<p>前画面に戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
+<p>マイページは<a href='<s:url action="MyPageAction"/>'>こちら</a></p>
 
 </div>
 
